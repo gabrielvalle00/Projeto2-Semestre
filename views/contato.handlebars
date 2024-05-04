@@ -1,0 +1,37 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/contato.css">
+{{/section}}
+
+<div class="container">
+    <div class="formulario">
+
+        <h2>Contato</h2>
+
+        <form id="contatoForm">
+            <label for="nomeContato">Nome:</label>
+            <input type="text" id="nomeContato" name="nomeContato" required>
+
+            <label for="emailContato">E-mail:</label>
+            <input type="email" id="emailContato" name="emailContato" required>
+
+            <label for="mensagemContato">Mensagem:</label>
+            <textarea id="mensagemContato" name="mensagemContato" rows="4" required></textarea>
+
+            <input type="submit" onclick="enviarMensagem()" value="Enviar Mensagem" id="btn">
+        </form>
+    </div>
+</div>
+
+<script>
+    
+    function enviarMensagem() {
+        const nomeContato = document.getElementById('nomeContato').value;
+        const emailContato = document.getElementById('emailContato').value;
+        const mensagemContato = document.getElementById('mensagemContato').value;
+
+        // Implemente a lógica de envio de mensagem conforme necessário
+        // Simplesmente exibe os dados da mensagem para este exemplo
+        alert(`Mensagem enviada com sucesso!\nNome: ${nomeContato}\nEmail: ${emailContato}\nMensagem: ${mensagemContato}`);
+    }
+
+</script>

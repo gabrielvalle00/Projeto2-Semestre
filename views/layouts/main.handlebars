@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundoliterario</title>
+    <script src="/js/books.js" defer></script>
+    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="images/icon.logo.png" />
+    {{{_sections.styles}}}
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="/" class="logo">M<span>un</span>do<span>li</span>te<span>rá</span>ri<span>o</span></a>
+        </div>
+
+        <nav>
+            {{>menu}}
+        </nav>
+        
+
+    </header>
+
+    <main>
+
+        {{{body}}}
+
+    </main>
+
+    <footer>
+        {{>footer}}
+    </footer>
+
+
+
+</body>
+
+</html>

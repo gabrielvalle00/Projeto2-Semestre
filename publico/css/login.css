@@ -1,0 +1,74 @@
+:root {
+    --red: #4CA1AF;
+    --white: #fff;
+    --dark: #1e1c2a;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+h2{
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #5d9e7e26;
+    color: #1a5eaa;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid #1a5eaa;
+    border-bottom-width: 4px;
+    width: 200px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin: auto 22%;
+}
+
+#btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    border-bottom-width: 6px;
+}
+
+#btn:active {
+    border-bottom-width: 2px;
+    filter: brightness(0.9);
+    transform: translateY(2px);
+}

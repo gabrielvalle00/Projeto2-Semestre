@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nome": "GABRIEL EDUARDO DO VALLE GOMES",
+        "email": "gabrivalle8@gmail.com",
+        "telefone": "19 981433894",
+        "senha": "1234",
+        "confirmaSenha": "1234",
+        "genero": "masculino"
+    },
+    {
+        "id": 2,
+        "nome": "Thata",
+        "email": "tata_schmidt@gmail.com",
+        "telefone": "19 974111188",
+        "senha": "mimimi",
+        "confirmaSenha": "mimimi",
+        "genero": "feminino"
+    }
+]

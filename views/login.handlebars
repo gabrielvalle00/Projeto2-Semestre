@@ -1,0 +1,31 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/login.css">
+{{/section}}
+
+<div class="container">
+    <div class="formulario">
+        <h2>Login</h2>
+        <form action="login" method="post" id="loginForm">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="emailLogin" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senhaLogin" name="senha" required>
+
+            <input type="submit" value="Login" id="btn">
+
+        </form>
+    </div>
+</div>
+
+<script>
+    function realizarLogin() {
+        const emailLogin = document.getElementById('emailLogin').value;
+        const senhaLogin = document.getElementById('senhaLogin').value;
+
+        // Implemente a lógica de login conforme necessário
+        // Simplesmente exibe os dados de login para este exemplo
+        alert(`Login realizado com sucesso!\nEmail: ${emailLogin}}`);
+    }
+</script>

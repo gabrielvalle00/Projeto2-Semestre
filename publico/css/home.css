@@ -1,0 +1,123 @@
+/* Define algumas variáveis CSS */
+:root {
+    --red: #4CA1AF;/* Cor vermelha */
+    --white: #fff;/* Cor branca */
+    --dark: #1e1c2a;/* Cor escura */
+}
+
+body {
+    color: var(--dark);
+    /* Define a cor do texto do corpo */
+}
+
+/* Estilo para a classe CSS 'home-text' */
+
+.home-text {
+/* Define a margem esquerda do elemento como 100 pixels */
+    margin-left: 100px;
+
+    margin-top: 50px;
+
+
+    /* Configura a opacidade inicial para 0 (invisível) */
+    opacity: 0;
+
+    /* Move o elemento para cima (20 pixels) para preparar o efeito de deslizamento para baixo */
+    transform: translateY(20px);
+
+    /* Aplica a animação chamada 'fadeInUp' com os seguintes parâmetros:
+       - Duração da animação: 1.5 segundos
+       - Efeito de transição: ease-out (desaceleração no final)
+       - Atraso de 0.5 segundos antes do início da animação
+       - 'forwards' faz com que o estado final da animação seja mantido após a conclusão */
+    animation: fadeInUp 1.5s ease-out 0.5s forwards;
+}
+
+/* Definição da animação chamada 'fadeInUp' */
+
+@keyframes fadeInUp {
+    /* Configuração do estado inicial da animação */
+    from {
+        opacity: 0; /* Opacidade inicial é 0 (invisível) */
+        transform: translateY(20px); /* Elemento começa 20 pixels acima da posição final */
+    }
+
+    /* Configuração do estado final da animação */
+    to {
+        opacity: 1; /* Opacidade final é 1 (totalmente visível) */
+        transform: translateY(0); /* Elemento atinge sua posição final (sem deslocamento vertical) */
+    }
+}
+
+
+.home-text h4 {
+
+    /* Tamanho da fonte 1,5rem, cor vermelha, margem 1rem */
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.home-text h2 {
+    font-size: 64px;
+    /* define o tamanho da fonte para 64px */
+    margin-bottom: 2rem;
+    /* define a margem inferior para 2rem */
+    line-height: 2.5rem;
+    /* define a altura da linha para 2,5rem */
+}
+
+.home-text p {
+    margin-bottom: 1rem;
+    margin-top: 60px;
+}
+
+.home-btn {
+    display: inline-block;
+    /* display: bloco embutido */
+    padding: 15px 45px;
+    /* preenchimento: 15px 45px */
+    background: var(--red);
+    /* plano de fundo: var(--vermelho) */
+    color: var(--white);
+    /* cor: var(--branco) */
+    border-radius: 10px;
+    /* raio da borda: 10px */
+    font-weight: 700;
+    /* peso da fonte: 700 */
+    transition: all 0.5s;
+    /* transição: todos os 0,5s */
+    text-decoration: none;
+    /* decoração de texto: nenhum */
+
+    margin-left: 100px;
+    
+}
+
+.home-btn:hover {
+    background: #C4E0E5;
+    /* Efeito de foco: azul claro */
+}
+
+
+/* seção inicial */
+.home {
+    width: 300px;
+    /* Largura fixa */
+    margin-left: 700px;
+    /* distância da esquerda */
+    margin-top: -250px;
+    /* puxa a seção para cima */
+}
+
+.img-home {
+    width: 450px;
+    /* define a largura da imagem para 450px */
+    margin-left: -60px;
+    /* desloca a imagem para a esquerda em 60px */
+    border-radius: 40px;
+    /* aplica border-radius de 60px para torná-lo circular */
+    
+}
+
+

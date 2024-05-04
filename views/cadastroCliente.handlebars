@@ -1,0 +1,112 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/cadastroCliente.css">
+{{/section}}
+
+
+{{!-- icones --}}
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<div class="navigation">
+    <a href="/funcionario">Funcionario</a>
+</div>
+
+
+<div class="container">
+
+    <div class="navegador">
+
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="apps-outline"></ion-icon>
+                    </span>
+                    <span class="title">Opções</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/funcionario">
+                    <span class="icon">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                    </span>
+                    <span class="title">Estoque</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/cadastroProdutos">
+                    <span class="icon">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </span>
+                    <span class="title">Cadastro produtos</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/pedidosFeitos">
+                    <span class="icon">
+                        <ion-icon name="bag-check-outline"></ion-icon>
+                    </span>
+                    <span class="title">Pedidos feitos</span>
+                </a>
+            </li>
+
+            <!-- Novo ícone adicionado -->
+            <li>
+                <a href="/cadastroCliente">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="title">Cadastro Clientes</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/">
+                    <span class="icon">
+                        <ion-icon name="exit-outline"></ion-icon>
+                    </span>
+                    <span class="title">Sair</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+<div class="container_tabela">
+
+    <h2>Clientes Cadastrados:</h2>
+
+    <div class="estoque">
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Id:</td>
+                    <td>Nome:</td>
+                    <td>E-mail:</td>
+                    <td>Telefone:</td>
+                    <td>Genero:</td>
+                </tr>
+            </thead>
+
+            {{#each dados}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{nome}}</td>
+                <td>{{email}}</td>
+                <td>{{telefone}}</td>
+                <td>{{genero}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+    </div>
+
+</div>

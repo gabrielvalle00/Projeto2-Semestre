@@ -1,0 +1,20 @@
+<div class="navigation">
+    {{#if funcionario}}
+    <a href="/funcionario">Funcionario</a>
+    {{/if}}
+
+    <a href="/loja" class="btn">Loja</a>
+    <a href="/contato">Contato</a>
+    <a href="/cadastro">Cadastro</a>
+    
+
+
+    {{#if login}}
+    <h4>{{dadoslogin}}</h4>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+
+    <a href="/carrinho"><div class="menu-openner"><span>0</span>🛒</div></a>
+
+</div>

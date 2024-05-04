@@ -1,0 +1,83 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/pagamento.css">
+{{/section}}
+
+<div class="container">
+
+    <form action="pagamento" method="post">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Forma de Pagamento</h3>
+
+                <div class="inputBox">
+                    <span><label for="nome">Nome completo :</label></span>
+                    <input name="nome" type="text" placeholder="Ex: Felipe Morais">
+                </div>
+                <div class="inputBox">
+                    <span><label for="email">Email :</label></span>
+                    <input name="email" type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span><label for="endereco">Endereço :</label></span>
+                    <input name="endereco" type="text" placeholder="Rua - Bairro -Número">
+                </div>
+                <div class="inputBox">
+                    <span><label for="cidade">Cidade :</label></span>
+                    <input name="cidade" type="text" placeholder="São Paulo">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span><label for="estado">Estado :</label></span>
+                        <input name="estado" type="text" placeholder="RJ">
+                    </div>
+                    <div class="inputBox">
+                        <span><label for="cep">CEP :</label></span>
+                        <input name="cep" type="text" placeholder="13181-292">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Cartões : </h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <div class="img_card"></div>
+                </div>
+                <div class="inputBox">
+                    <span>Nome no cartão :</span>
+                    <input type="text" placeholder="Felipe Morais Silva">
+                </div>
+                <div class="inputBox">
+                    <span>Número do cartão de crédito :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Mês de expedição :</span>
+                    <input type="text" placeholder="Janeiro">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="number" placeholder="2099">
+                    </div>
+                    <div class="inputBox">
+                        <span>Desconto :</span>
+                        <input type="text" placeholder="BC3435">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="submit" value="Finalizar pagamento" class="submit-btn">
+
+    </form>
+
+</div>

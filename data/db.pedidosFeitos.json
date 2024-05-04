@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "pedido": ["Will e Will", "A culpa é das estrelas", "A hipótese do amor"],
+        "endereco": "Rua das Magnolias, 204",
+        "cep": "12.345-730"
+    },
+    {
+        "id": 2,
+        "pedido": "O homem de giz", 
+        "endereco": "Rua das Borboletas, 307",
+        "cep": "13.375-430"
+    },
+    {
+        "id": 3,
+        "pedido": ["The Institute", "It a Coisa"],
+        "endereco": "Rua dos doidos, 0",
+        "cep": "00.000-000"
+    }
+]
